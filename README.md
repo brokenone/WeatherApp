@@ -37,7 +37,7 @@ git clone https://github.com/username/WeatherApp.git
 cd WeatherApp
 dotnet restore
 dotnet run
-
+```
 ---
 
 ## 📂 Структура проекта
@@ -65,3 +65,18 @@ WeatherApp/
 │
 └── Config/
     └── ApiSettings.cs
+```
+---
+
+##🔑 Настройка API ключей
+- В файле appsettings.json укажи свои ключи:
+```
+"ApiSettings": {
+  "OpenWeatherApiKey": "YOUR_KEY",
+  "WeatherApiKey": "YOUR_KEY",
+  "TomorrowApiKey": "YOUR_KEY",
+  "OpenWeatherApiUrl": "https://api.openweathermap.org/data/2.5/weather",
+  "WeatherApiUrl": "http://api.weatherapi.com/v1/current.json",
+  "TomorrowApiUrl": "https://api.tomorrow.io/v4/weather/realtime",
+  "CitiesApiUrl": "https://countriesnow.space/api/v0.1/countries/cities"
+}
